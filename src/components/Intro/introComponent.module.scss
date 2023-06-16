@@ -1,0 +1,46 @@
+.introComponent {
+  margin-top: 160px;
+  display: flex;
+  justify-content: space-between;
+
+  &Left {
+    max-width: 600px;
+    width: 100%;
+    margin-right: 20px;
+  }
+
+  &Title {
+    margin-top: 0;
+    color: var(--light-blue);
+  }
+
+  &Text {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .introComponentRight img {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .introComponentRight img {
+    width: 500px;
+  }
+
+  .introComponent {
+    margin-top: 70px;
+    flex-direction: column;
+  }
+
+  .introComponentRight img {
+    width: 100%;
+  }
+
+  .introComponentLeft {
+    max-width: 100%;
+    margin-right: 0;
+  }
+}

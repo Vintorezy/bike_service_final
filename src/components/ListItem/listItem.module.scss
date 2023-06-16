@@ -1,0 +1,32 @@
+.listItem {
+  max-width: 300px;
+  width: 100%;
+  margin: 30px 15px 0 0;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid var(--dark-blue);
+  color: var(--gray);
+
+  &Link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 35px;
+    border-radius: 10px;
+    background: var(--light-blue);
+    color: var(--gray);
+    margin-top: 20px;
+    font-size: 14px;
+
+    &:hover {
+      background: var(--dark-blue);
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .listItem {
+    max-width: 100%;
+  }
+}

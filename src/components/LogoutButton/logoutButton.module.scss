@@ -1,0 +1,17 @@
+.logoutButton {
+  background: var(--light-blue);
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .logoutButton {
+    width: auto;
+    padding: 0 7px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logoutButton {
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,16 @@
+.editLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 35px;
+  border-radius: 10px;
+  font-size: 14px;
+  background: var(--light-blue);
+  color: var(--gray);
+  margin-left: 10px;
+
+  &:hover {
+    background: var(--dark-blue);
+  }
+}

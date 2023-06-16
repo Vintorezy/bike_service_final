@@ -1,0 +1,29 @@
+.header {
+  background: var(--blue);
+  padding: 10px 0px;
+  border-bottom: 1px solid var(--gray);
+}
+
+.headerInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.actionsWrapper {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .headerInner img {
+    width: 65px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .headerInner img {
+    width: 55px;
+  }
+}

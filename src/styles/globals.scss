@@ -1,0 +1,108 @@
+@import './variables.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  background: var(--blue);
+  color: var(--gray);
+}
+
+section {
+  padding-top: 40px;
+}
+
+select {
+  width: 284px;
+  height: 30px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  width: 180px;
+  height: 40px;
+  border-radius: 10px;
+  color: var(--gray);
+  transition: all 0.3s;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background: var(--dark-blue);
+  }
+}
+
+input {
+  border: 2px solid transparent;
+  transition: all 0.3s;
+
+  &:focus {
+    outline: none;
+    border: 2px solid var(--dark-blue);
+  }
+
+  &[type='checkbox'] {
+    cursor: pointer;
+  }
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1500px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.error-message {
+  font-size: 15px;
+  color: var(--red);
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.process-message {
+  font-size: 15px;
+  color: var(--red);
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
